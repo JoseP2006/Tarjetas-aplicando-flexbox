@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Interactivas</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .card-content .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #60c957;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .card:hover .price {
+            color: #ff4500;
+        }
+
+        .card-footer {
+            background-color: #60c957;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .card:hover .card-footer {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Tarjeta 1 -->
+        <div class="card">
+            <img src="https://musswatch.com/blog/wp-content/uploads/2018/09/funcionamiento-reloj-cuarzo-precio-870x658.jpg" alt="Reloj">
+            <div class="card-content">
+                <h3>GARNIER</h3>
+                <p>Garnier Pure Active Micellar Cleansing Water, 125 ml</p>
+                <span class="price">$60</span>
+            </div>
+            <div class="card-footer">ADD TO CART</div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card">
+            <img src="https://ego.do/wp-content/uploads/450052-BLACK-LTHR-Zapato-Chocic-Negro-Democrata_01.jpg" alt="Zapatos">
+            <div class="card-content">
+                <h3>GARNIER</h3>
+                <p>Garnier Pure Active Micellar Cleansing Water, 125 ml</p>
+                <span class="price">$60</span>
+            </div>
+            <div class="card-footer">ADD TO CART</div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card">
+            <img src="https://do.kennethcolelatino.com/cdn/shop/products/17NY054460_INDIGO_1_1080x.jpg?v=1665165470" alt="Camisa">
+            <div class="card-content">
+                <h3>GARNIER</h3>
+                <p>Garnier Pure Active Micellar Cleansing Water, 125 ml</p>
+                <span class="price">$15</span>
+            </div>
+            <div class="card-footer">ADD TO CART</div>
+        </div>
+    </div>
+</body>
+</html>
